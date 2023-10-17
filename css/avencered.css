@@ -1,0 +1,348 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* navbar start */
+nav {
+    background-color: #0082e6;
+  }
+  
+  /* Step 5 */
+  /* change height and width of the nav container */
+  
+  nav {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+  }
+  
+  /* Step 6 */
+  /* Style the logo */
+  
+  label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  
+  /* Step 7 */
+  /* Style the nav */
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  /* Step 8 */
+  /* Style the nav */
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  /* Step 9 */
+  /* Style the link inside the nav */
+  
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  /* Step 10 */
+  /* Remember to add the class active on the index.html site before adding css below */
+  /* Style the active link */
+  
+  a:active,
+  a:hover {
+    background-color: #1b9bff;
+    transition: .5s;
+  }
+  
+  /* Step 11 */
+  /* updating the style inside the nav */
+  
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  /* Step 13 */
+  /* styling the label checkbtn class */
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  /* Step 14 */
+  /* styling the input tag  */
+  #check {
+    display: none;
+  }
+  
+  /* Step 15 */
+  /* styling the label checkbtn class - display none*/
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* step 16 */
+  /* adding CSS Media Query - break-point 925px max */
+  @media (max-width: 925px){
+
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+
+
+    nav ul li a {
+      font-size: 16px;
+
+    }
+
+    h1{
+      padding-top: 20px;
+    }
+  }
+
+  /* step 17  */
+  /* adding CSS Media query - break-point 858px max */
+  @media(max-width: 858px){
+
+    .checkbtn{
+      display: block;
+    }
+
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: 0;
+      text-align: center;
+    }
+
+  
+/* step 18 */
+/* continueing styling break-point 858px max */
+nav ul li {
+  display: block;
+}
+ul {
+  left: 100%;
+  transition: all 0.5s;
+}
+
+/* step 19 */
+/* continueing styling break-point 858px max */
+/* adding new selector #check:checked ~ */
+
+#check:checked ~ ul{
+  left: 0;
+
+}
+
+
+
+/* step 20 */
+/* updating selector - nav ul li  */
+/* adding new propperties - margin and line-height */
+
+
+
+nav ul li {
+  margin: 50px 0;
+  line-height: 30px;
+}
+ }
+
+
+ /* step 21 */
+/* styling section tag - outside the media query */
+/* adding new propperties background - background-size - height */
+
+/* section{
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  height: calc(300vh - 80px);
+
+} */
+/* step 22 */
+/* making the navbar position fixd */
+nav{
+  /* position: fixed; */
+}
+
+/* navbar end */
+
+
+.card img{
+    width: 40%;
+    height: 40%;
+}
+.container{
+    width: 100%;
+}
+
+.container .row{
+    width: 80%;
+    margin: auto;
+}
+.container .row .header{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.container .row .header h1{
+    padding-top: 30px;
+    font-size: 45px;
+    color: black;
+}
+.container .row .header p{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.content .card{
+    flex: 1;
+    margin: 50px 20px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.content .card img{
+    width: 100%;
+    height: auto;
+
+}
+
+.content .card h4{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+.content .card p{
+    font-size: 15px;
+    color: #6e6e6e;
+    line-height: 1.5;
+    padding: 10px;
+}
+/* traing content end  */
+/* footer area start */
+.footer {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    color: #4b4c4d;
+}
+
+.footer, 
+.social {
+    text-align: center;
+    padding: 25px;
+    color: #4b4c4d;
+}
+
+
+.social a{
+    font-size: 24px;
+    /* inherit tager farven fra .footer, .social -omar */
+    /* the color property here - gets the same color as its container - in this case . social (color: #4b4c4d) */
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.social a:hover {
+opacity: 1.9;
+}
+
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+.footer ul li {
+display: inline-block;
+padding: 0 15px;
+
+}
+
+.footer ul li a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer ul li a:hover{
+    opacity: 1;
+}
+
+
+.footer, .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;   
+}
+/* styling footer so it is always placed in bottom */
+footer.footer{
+    /* position: absolute; this will stop it from staring before content area 2 */ 
+    position: relative;
+   bottom: 0;
+    width: 100%;
+    bottom: 0;
+}
+/* footer area end */
+
+/* footor end  */
+@media screen and (max-width: 768px) {
+    .content{
+        flex-direction: column;
+    }
+}

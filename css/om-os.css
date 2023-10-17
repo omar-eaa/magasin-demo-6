@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: dimgray;
+}
+
+
+
+
+/* navbar start */
+nav {
+    background-color: #0082e6;
+  }
+  
+  /* Step 5 */
+  /* change height and width of the nav container */
+  
+  nav {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+  }
+  
+  /* Step 6 */
+  /* Style the logo */
+  
+  label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  
+  /* Step 7 */
+  /* Style the nav */
+  
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  /* Step 8 */
+  /* Style the nav */
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  
+  /* Step 9 */
+  /* Style the link inside the nav */
+  
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  /* Step 10 */
+  /* Remember to add the class active on the index.html site before adding css below */
+  /* Style the active link */
+  
+  a:active,
+  a:hover {
+    background-color: #1b9bff;
+    transition: .5s;
+  }
+  
+  /* Step 11 */
+  /* updating the style inside the nav */
+  
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  /* Step 13 */
+  /* styling the label checkbtn class */
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  
+  /* Step 14 */
+  /* styling the input tag  */
+  #check {
+    display: none;
+  }
+  
+  /* Step 15 */
+  /* styling the label checkbtn class - display none*/
+  .checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* step 16 */
+  /* adding CSS Media Query - break-point 925px max */
+  @media (max-width: 925px){
+
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+
+
+    nav ul li a {
+      font-size: 16px;
+
+    }
+
+    h1{
+      padding-top: 20px;
+    }
+  }
+
+  /* step 17  */
+  /* adding CSS Media query - break-point 858px max */
+  @media(max-width: 858px){
+
+    .checkbtn{
+      display: block;
+    }
+
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: 0;
+      text-align: center;
+    }
+
+  
+/* step 18 */
+/* continueing styling break-point 858px max */
+nav ul li {
+  display: block;
+}
+ul {
+  left: 100%;
+  transition: all 0.5s;
+}
+
+/* step 19 */
+/* continueing styling break-point 858px max */
+/* adding new selector #check:checked ~ */
+
+#check:checked ~ ul{
+  left: 0;
+
+}
+
+
+
+/* step 20 */
+/* updating selector - nav ul li  */
+/* adding new propperties - margin and line-height */
+
+
+
+nav ul li {
+  margin: 50px 0;
+  line-height: 30px;
+}
+ }
+
+
+ /* step 21 */
+/* styling section tag - outside the media query */
+/* adding new propperties background - background-size - height */
+
+/* section{
+  background: url(../img/bg.jpg);
+  background-size: cover;
+  height: calc(300vh - 80px);
+
+} */
+/* step 22 */
+/* making the navbar position fixd */
+nav{
+  /* position: fixed; */
+}
+
+/* navbar end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-1{
+    margin: 30px;
+    padding: 5px;
+}
+.about-1 h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.about-1 p{
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+}
+
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px 30px;
+    box-shadow: 0 0 9px rgba(0, 0, 0, .6);
+
+}
+.about-item i{
+    font-size: 43;
+
+}
